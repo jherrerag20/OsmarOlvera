@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* Estilos iniciales */
+.menu ul.anchor_nav li a {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.menu ul.anchor_nav li a:hover {
+    color: #27F2F2 !important;
+}
+
+.menu ul.anchor_nav li.current a {
+    color: #fff !important;
+}
+
+/* Estilos cuando se hace scroll */
+.scrolled .menu ul.anchor_nav li a {
+    color: #000 !important;
+}
+
+.scrolled .menu ul.anchor_nav li a:hover {
+    color: #27F2F2 !important;
+}
+
+.scrolled .menu ul.anchor_nav li.current a {
+    color: #000 !important;
+}
+
+/* Estilos para el elemento activo */
+.menu ul.anchor_nav li.active a {
+    color: #000 !important;
+}
+
+.menu ul.anchor_nav li.active a:hover {
+    color: #27F2F2 !important;
+}
+
+/* Sobrescribiendo estilos de la clase animate */
+.grax_tm_topbar.animate .menu ul li a {
+    color: inherit !important; /* Use inherit para que el color se controle mediante las clases anteriores */
+}
