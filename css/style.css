@@ -1740,7 +1740,7 @@ body.modal{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/slider/HOME_5@0.3x.png);
+	background-image: url(..//img/slider/HOME_5@0.3x\ \(1\).png);
 }
 .grax_tm_hero .ripple:before{
 	position: absolute;
