@@ -964,104 +964,125 @@ h6 { font-size: 16px; }
 
 
 
-.grax_tm_portfolio2{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 140px 0px 100px 0px;
-	background-color: black;
+.grax_tm_portfolio2 {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 140px 0px 100px 0px;
+    background-color: black;
 }
-.grax_tm_portfolio2 .portfolio_list{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 90px;
+
+.grax_tm_portfolio2 .portfolio_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-top: 90px;
 }
-.grax_tm_portfolio2 ul{
-	margin: 0px 0px 0px -50px;
-	list-style-type: none;
+
+.grax_tm_portfolio2 ul {
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; /* Aumenta el espacio entre los logos */
 }
-.grax_tm_portfolio2 ul li{
-	margin: 0px 0px 50px 0px;
-	float: left;
-	width: 33.3333%;
-	padding-left: 50px;
+
+.grax_tm_portfolio2 ul li {
+    margin: 0;
+    float: none;
+    width: auto;
+    padding: 0;
+    flex: 1 1 150px; /* Asegura que los elementos se distribuyan equitativamente */
+    max-width: 150px;
 }
-.grax_tm_portfolio2 ul li .list_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	border-radius: 5px;
-	overflow: hidden;
+
+.grax_tm_portfolio2 ul li .list_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
-.grax_tm_portfolio2 .image{position: relative;}
-.grax_tm_portfolio2 .image img{
-	min-width: 100%;
-	opacity: 0;
+
+.grax_tm_portfolio2 .image {
+    position: relative;
 }
-.grax_tm_portfolio2 .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border-radius: 5px;
+
+.grax_tm_portfolio2 .image img {
+    min-width: 100%;
+    opacity: 0;
 }
-.grax_tm_portfolio2 .overlay{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-	background-color: #f9f9f9;
-	border-radius: 5px;
-	
-	opacity: 0;
-	visibility: hidden;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+
+.grax_tm_portfolio2 .image .main {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
 }
-.grax_tm_portfolio2 ul li .list_inner:hover .overlay{
-	opacity: 1;
-	visibility: visible;
+
+.grax_tm_portfolio2 .overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.grax_tm_portfolio2 .details{
-	position: absolute;
-	bottom: 20px;
-	left: 30px;
-	z-index: 2;
-	
-	opacity: 0;
-	visibility: hidden;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+
+.grax_tm_portfolio2 ul li .list_inner:hover .overlay {
+    opacity: 1;
+    visibility: visible;
 }
-.grax_tm_portfolio2 ul li .list_inner:hover .details{
-	opacity: 1;
-	visibility: visible;
-	bottom: 30px;
+
+.grax_tm_portfolio2 .details {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.grax_tm_portfolio2 .details span{font-family: "Poppins";}
-.grax_tm_portfolio2 .details h3{
-	font-size: 18px;
-	font-weight: 600;
+
+.grax_tm_portfolio2 ul li .list_inner:hover .details {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
 }
+
+.grax_tm_portfolio2 .details span {
+    font-family: "Poppins";
+}
+
+.grax_tm_portfolio2 .details h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 
 .grax_tm_full_link{
 	position: absolute;
