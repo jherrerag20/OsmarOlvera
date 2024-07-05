@@ -311,7 +311,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	float: left;
 	clear: both;
-	background-color: #fff;
+	background-color: black;
 	padding: 20px 0px;
 	border-bottom: 1px solid rgba(0,0,0,.2);
 }
@@ -409,7 +409,7 @@ h6 { font-size: 16px; }
 .my_trigger .hamburger .hamburger-inner::before,
 .my_trigger .hamburger .hamburger-inner::after,
 .my_trigger .hamburger .hamburger-inner{
-	background-color: #000;
+	background-color: #fff;
 	width: 30px;
 	
 	-webkit-transition: all .3s ease;
@@ -451,7 +451,7 @@ h6 { font-size: 16px; }
 	font-family: "Montserrat";
 	font-weight: 500;
 }
-.grax_tm_mobile_menu .logo img{max-width: 70px;}
+.grax_tm_mobile_menu .logo img{max-width: 90px;}
 
 /*---------------------------------------------------*/
 /*	04) GRAX HERO
@@ -525,8 +525,8 @@ h6 { font-size: 16px; }
 .grax_tm_hero .details[data-animation="toTop"] .fn_animation .character{top: 15px;}
 .grax_tm_hero .details[data-animation="toTop"] .fn_animation .character.opened{top: 0px;}
 
-.grax_tm_hero .details[data-animation="toRight"] .fn_animation .character{right: 15px;}
-.grax_tm_hero .details[data-animation="toRight"] .fn_animation .character.opened{right: 0px;}
+.grax_tm_hero .details[data-animation="toRight"] .fn_animation .character{left: 15px;}
+.grax_tm_hero .details[data-animation="toRight"] .fn_animation .character.opened{left: 0px;}
 
 .grax_tm_hero .details[data-animation="scale"] .fn_animation .character{
 	opacity: 1;
@@ -1716,7 +1716,7 @@ body.modal{
  	height: 100%;
 	top: 0;
  	left: 0;
-	background-image: url("..//img/slider/HOME_2.png");
+	background-image: url("..//img/slider/HOME_4.png");
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-position: center;
@@ -1740,7 +1740,7 @@ body.modal{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/slider/HOME_2.png);
+	background-image: url(..//img/slider/HOME_4.png);
 }
 .grax_tm_hero .ripple:before{
 	position: absolute;
