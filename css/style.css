@@ -1758,15 +1758,29 @@ body.modal{
 /*	10) GRAX COPYRIGHT
 /*---------------------------------------------------*/
 
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+
+.grax_tm_all_wrap {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px; /* Altura del footer */
+    box-sizing: border-box;
+}
+
 .grax_tm_copyright{
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left;
 	background-color: black;
 	padding: 130px 0px 100px 0px;
 	position: relative;
+    margin-top: 50px; /* Agrega espacio encima del footer */
 }
+
 .grax_tm_copyright .copyright_inner{
 	width: 100%;
 	height: auto;
@@ -1775,24 +1789,35 @@ body.modal{
 	align-items: center;
 	justify-content: space-between;
 }
-.grax_tm_copyright .logo img{max-width: 180px;}
+
+.grax_tm_copyright .logo img{
+	max-width: 180px;
+}
+
 .grax_tm_copyright .social ul{
 	margin: 0px;
 	list-style-type: none;
 }
+
 .grax_tm_copyright .social ul li{
 	margin: 0px 25px 0px 0px;
 	display: inline-block;
 }
-.grax_tm_copyright .social ul li:last{margin-right: 0px;}
+
+.grax_tm_copyright .social ul li:last{
+	margin-right: 0px;
+}
+
 .grax_tm_copyright .social ul li a{
 	text-decoration: none;
 	color: #fff;
 }
+
 .grax_tm_copyright .social .svg{
 	width: 17px;
 	height: 17px;
 }
+
 .grax_tm_copyright .copy p{
 	text-transform: uppercase;
 	color: #fff;
@@ -1800,22 +1825,31 @@ body.modal{
 	font-weight: 500;
 	font-size: 14px;
 }
+
 .grax_tm_copyright .copy a{
 	text-decoration: none;
 	color: #fff;
 }
+
 .my_wave{
 	position: absolute;
 	top: 0;
 	left: 0px;
 	width: 100%;
 }
+
 .my_wave svg{
 	overflow: hidden;
 	vertical-align: middle;
   	height: 180px;
 	width: 100%;
 	fill: #07AFEC;
+}
+
+.grax_tm_copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*---------------------------------------------------*/
