@@ -288,10 +288,10 @@ h6 { font-size: 16px; }
 	font-weight: 500;
 	transition: all .3s ease;
 }
-.grax_tm_topbar .menu ul li.current a{color: #0583F2;}
-.grax_tm_topbar .menu ul li a:hover{color: #0583F2;}
+.grax_tm_topbar .menu ul li.current a{color: #4F9EDD;}
+.grax_tm_topbar .menu ul li a:hover{color: #4F9EDD;}
 .grax_tm_topbar.animate .menu ul li a{color: white;}
-.grax_tm_topbar.animate .menu ul li a:hover{color: #0583F2;}
+.grax_tm_topbar.animate .menu ul li a:hover{color: #4F9EDD;}
 
 /*---------------------------------------------------*/
 /*	03) GRAX MOBILE MENU
@@ -448,7 +448,16 @@ h6 { font-size: 16px; }
 	color: #000;
 	display: inline-block;
 	padding: 4px 0px;
-	font-family: "Montserrat";
+	font-family: "Poppins";
+	font-weight: 500;
+}
+
+.grax_tm_mobile_menu .dropdown .dropdown_inner ul li a:hover{
+	text-decoration: none;
+	color: #4F9EDD;
+	display: inline-block;
+	padding: 4px 0px;
+	font-family: "Poppins";
 	font-weight: 500;
 }
 .grax_tm_mobile_menu .logo img{max-width: 90px;}
@@ -745,8 +754,8 @@ h6 { font-size: 16px; }
 	text-decoration: none;
     color: #fff;
     display: inline-block;
-    background-color: #0583F2;
-	border: 2px solid #0583F2;
+    background-color: #4F9EDD;
+	border: 2px solid #4F9EDD;
     padding: 10px 40px;
     border-radius: 5px;
 	

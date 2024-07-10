@@ -8,6 +8,8 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+<!-- Añade estos enlaces en la sección <head> de tu HTML -->
+
 <link rel="icon" type="image/png" href="img/COLOR=W.png" />
 
 <meta property="og:type" content="website" />
@@ -28,6 +30,7 @@
 <!--<link rel="stylesheet" type="text/css" href="css/colors.css" />-->
 <link rel="stylesheet" type="text/css" href="css/darkMode.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/slide.css">
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
 
@@ -84,7 +87,7 @@
 
 <body> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark"> -->
 	
-	<!-- PRELOADER -->
+	<!-- PRELOADER-->
 	<div id="preloader">
 		<div class="loader_line"></div>
 	</div>
@@ -223,61 +226,160 @@
 	
 	<!-- ABOUT -->
 	<div class="grax_tm_section" id="about">
-		<div class="grax_tm_about">
-			<div class="container">
-				<div class="about_inner">
-					<div class="left wow fadeInLeft" data-wow-duration="1.5s">
-						<div class="image parallax" data-relative-input="true">
-							<img src="img/placeholders/3-4.jpg" alt="" />
-							<div class="main layer" data-img-url="img/about/OSMAR_002.png" data-depth="0.04"></div>
-						</div>
-					</div>
-					<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-						<div class="grax_tm_title_holder">
-							<h3>Bio</h3>
-						</div>
-						<div class="text">
-							<p>Osmar Olvera Ibarra es un destacado atleta olímpico mexicano especializado en clavados. Su dedicación, disciplina y excelencia deportiva lo han llevado a convertirse en un símbolo del deporte en México y en el mundo.</p>
-						</div>
-						<!-- <div class="list">
-							<ul>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/checked.svg" alt="" />
-										<span>Web Development</span>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/checked.svg" alt="" />
-										<span>Search Engine Optimization</span>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/checked.svg" alt="" />
-										<span>Social Media Marketing</span>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<img class="svg" src="img/svg/checked.svg" alt="" />
-										<span>Content Generation</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="grax_tm_button">
-							<a href="img/resume/resume.jpg" download>Download CV</a>
-						</div> -->
-					</div>
-				</div>
-				<div class="text">
-					<p style="text-align: center;"><br><br>La misión de Osmar es inspirar a la juventud mexicana a través del deporte, demostrando que con esfuerzo y dedicación se pueden alcanzar grandes metas. Su visión es continuar compitiendo al más alto nivel, siempre representando a México con honor y determinación.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="grax_tm_about">
+            <div class="container">
+                <div class="about_inner">
+                    <div class="left wow fadeInLeft" data-wow-duration="1.5s">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/OSMAR_002.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Bio</h3>
+                                        <p>Osmar Olvera Ibarra es un destacado atleta olímpico mexicano especializado en clavados. Su dedicación, disciplina y excelencia deportiva lo han llevado a convertirse en un símbolo del deporte en México y en el mundo. <br>
+                                            La misión de Osmar es inspirar a la juventud mexicana a través del deporte, demostrando que con esfuerzo y dedicación se pueden alcanzar grandes metas. Su visión es continuar compitiendo al más alto nivel, siempre representando a México con honor y determinación.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/slide2.jpg" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Un Niño con un Sueño</h3>
+                                        <p>
+                                            Desde muy joven, Osmar Olvera Ibarra mostró un entusiasmo inigualable por el agua. Nacido en Iztapalapa, México, el 5 de junio de 2004, Osmar siempre estuvo fascinado por el agua y las alturas. Sus abuelos, apasionados por la educación física y el deporte, construyeron una alberca en su casa, donde comenzó su estimulación en el agua a los 6 meses. A los 2 años ya había aprendido a nadar y jugaba lanzándose al agua. A los 4 años y medio, su tío Erik, impresionado por sus habilidades para nadar y hacer piruetas, lo introdujo a las pruebas de clavados.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>El Apoyo Inquebrantable de su Familia</h3>
+                                        <p>
+                                            La familia de Osmar ha sido un pilar fundamental en su carrera. Sus padres, Mayanin y Sergio, ambos grandes deportistas, vieron el potencial y la dedicación de Osmar desde muy joven. Ellos le brindaron el apoyo emocional y motivacional necesario para que pudiera perseguir sus sueños con confianza y determinación. Los sacrificios y el compromiso de su familia jugaron un papel crucial en el crecimiento de Osmar como atleta, proporcionándole un entorno de amor y disciplina.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Despegue y Crecimiento en Competencias</h3>
+                                        <p>
+											En 2013, con tan solo 9 años de edad, Osmar tomó una decisión que cambiaría su vida: se mudó a Guadalajara para entrenar bajo la tutela del renombrado entrenador Adair Mata en el CODE Jalisco. Durante los siguientes cinco años, Osmar se dedicó intensamente a su entrenamiento, creciendo y destacándose en competencias nacionales e internacionales. Bajo la mentoría de Adair, Osmar perfeccionó sus habilidades y se convirtió en un competidor formidable.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Despegue y Crecimiento en Competencias</h3>
+                                        <p>
+											Compitió en su primer campeonato nacional a los 10 años, obteniendo una medalla de plata en trampolín de 1 metro en la Olimpiada Nacional de Chetumal, Quintana Roo. Esta experiencia consolidó su determinación y le mostró que tenía el potencial para competir a niveles aún más altos. Con cada competencia, Osmar ganaba valiosa experiencia.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>El Regreso Triunfal a la Ciudad de México</h3>
+                                        <p>
+											En 2018, Osmar regresó a la Ciudad de México para entrenar con la reconocida entrenadora Ma Jin, estrella de China y entrenadora principal del equipo nacional de clavados de México, quien ha sido una figura crucial en la mejora del rendimiento de Osmar. Bajo su tutela, Osmar dio el salto al equipo de primera fuerza y mejoró sustancialmente su técnica, lo que le permitió competir al más alto nivel internacional.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Debut Olímpico: Un Paso Importante</h3>
+                                        <p>
+											A los 16 años, Osmar hizo su debut olímpico en los Juegos Olímpicos de Tokio 2020, convirtiéndose en el clavadista más joven del equipo mexicano. Compitió en trampolín de 3 metros, obteniendo el 14º lugar, una experiencia que marcó el comienzo de su carrera en el escenario más grande del deporte mundial.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Logros Internacionales y el Camino al Éxito</h3>
+                                        <p>
+											El camino de Osmar hacia el estrellato internacional no fue fácil, pero su dedicación y trabajo arduo dieron frutos. Entre sus logros más destacados se encuentran:
+											<br><b>Medallas de Plata en el Campeonato Mundial de Natación, Fukuoka, Japón 2023:</b> Plata en trampolín de 1 metro y 3 metros.
+											<br><b>Campeón en los Juegos Panamericanos, Santiago de Chile 2023:</b> Oro individual en trampolín de 1 metro, oro individual en trampolín de 3 metros, oro sincronizado.
+											<br><b>Medallas en el Campeonato Mundial de Natación, Doha, Qatar 2024:</b> Oro en trampolín de 1 metro y bronce en trampolín de 3 metros.
+
+										</p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>El Camino Hacia el Campeonato Mundial</h3>
+                                        <p>
+											La cúspide de la carrera de Osmar hasta ahora ha sido su triunfo en el Campeonato Mundial de Natación. En 2024, en Doha, Qatar, Osmar se enfrentó a los mejores del mundo y salió victorioso, llevándose a casa la medalla de oro y consolidando su posición como uno de los mejores clavadistas del planeta. Este logro no solo fue un triunfo personal, sino también un orgullo para su familia y su país.
+                                        </p>
+                                    </div>
+                                </div>
+								<div class="swiper-slide">
+                                    <div class="image parallax" data-relative-input="true">
+                                        <img src="img/placeholders/3-4.jpg" alt="" />
+                                        <div class="main layer" data-img-url="img/about/IMAGEN_TERCERA.png" data-depth="0.04"></div>
+                                    </div>
+                                    <div class="slide-text" style="display: none;">
+                                        <h3>Mirando hacia el Futuro: El Horizonte Olímpico
+										</h3>
+                                        <p>
+											Con los Juegos Olímpicos de París 2024 en el horizonte, Osmar está más motivado que nunca. Su objetivo es claro: seguir entrenando con la misma dedicación y pasión que lo han llevado hasta aquí, y representar a México en el escenario más grande del mundo, los Juegos Olímpicos. Con el apoyo continuo de su familia, su equipo y sus seguidores, Osmar está listo para escribir el próximo capítulo de su increíble historia.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Add more slides with titles as needed -->
+                            </div>
+                            <!-- Add Navigation -->
+                            <button class="swiper-button-next">Next</button>
+                            <button class="swiper-button-prev">Prev</button>
+                        </div>
+                    </div>
+                    <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+                        <div class="grax_tm_title_holder">
+                            <h3 id="slide-title">Bio</h3>
+                        </div>
+                        <div class="text">
+                            <p id="bio-text">Osmar Olvera Ibarra es un destacado atleta olímpico mexicano especializado en clavados. Su dedicación, disciplina y excelencia deportiva lo han llevado a convertirse en un símbolo del deporte en México y en el mundo. <br>
+                                La misión de Osmar es inspirar a la juventud mexicana a través del deporte, demostrando que con esfuerzo y dedicación se pueden alcanzar grandes metas. Su visión es continuar compitiendo al más alto nivel, siempre representando a México con honor y determinación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 	<!-- /ABOUT -->
 
 	<!-- Banner Video -->
@@ -320,6 +422,11 @@
                                     <img src="img/placeholders/1-1.jpg" alt="" />
                                     <div class="main" data-img-url="img/portfolio/GALLERY_1.png"></div>
                                 </div>
+
+								<!-- #region<div class="details">
+									<span>Mundial de Deportes Acuáticos, Doha, 3 de febrero de 2024.</span>
+								</div>
+								/#region -->
                                 <p>(Hassan Ammar / Associated Press)</p>
                             </div>
                         </li>
@@ -329,6 +436,11 @@
                                     <img src="img/placeholders/1-1.jpg" alt="" />
                                     <div class="main" data-img-url="img/portfolio/GALLERY_2.png"></div>
                                 </div>
+
+								<div class="details">
+									<span>Osmar Gei</span>
+								</div>
+
                                 <p>(Hassan Ammar / Associated Press)</p>
                             </div>
                         </li>
@@ -338,6 +450,11 @@
                                     <img src="img/placeholders/1-1.jpg" alt="" />
                                     <div class="main" data-img-url="img/portfolio/GALLERY_3.png"></div>
                                 </div>
+
+								<div class="details">
+									<span></span>
+								</div>
+
                                 <p>(Facebook Meta / Osmar Olvera)</p>
                             </div>
                         </li>
@@ -365,6 +482,29 @@
 	
 	
 	<!-- /PORTFOLIO -->
+
+
+	<!-- Frase -->
+	 
+		<!-- TALK -->
+	
+	<div class="grax_tm_section">
+		<div class="grax_tm_talk">
+			<div class="container">
+				<div class="talk_inner">
+					<div class="text wow fadeInLeft" data-wow-duration="1.5s">
+						<h3><span><i>"Soy clavadista, el atleta que danza en la catedral del viento". Germán Carrasco.</span></i></h3>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- /TALK -->
+	
+
+	<!-- /Frase -->
+
+
 	
 	<!-- PROGRESS -->
 	<!-- <div class="grax_tm_progress_part">
@@ -400,7 +540,7 @@
 		<div class="grax_tm_news">
 			<div class="container">
 				<div class="grax_tm_title_holder" style="margin-bottom: 30px;">
-					<h3>Últimas <span style="color: #0583F2;">noticias</span></h3>
+					<h3>Últimas <span style="color: #4F9EDD;">noticias</span></h3>
 				</div>
 				<div class="text">
 					<p>Mantente informado con las últimas noticias y actualizaciones sobre Osmar. Aquí podrás encontrar información sobre sus competencias más recientes, logros y otras novedades relacionadas con su carrera deportiva.</p>
@@ -435,12 +575,13 @@
 	</div>
 	 /NEWS -->
 
+	 
 	<!-- PORTFOLIO -->
 	<div class="grax_tm_section" id="sponsors">
 		<div class="grax_tm_portfolio2">
 			<div class="container">
 				<div class="grax_tm_title_holder">
-					<h3 style="color: white;">Aliados en <span style="color: #0583F2;">cada salto</span></h3>
+					<h3 style="color: white;">Mis aliados en <span style="color: #4F9EDD;">cada clavado</span></h3>
 				</div>
 				<div class="portfolio_list">
 					<ul class="gallery_zoom my_waypoint">
@@ -514,6 +655,7 @@
 								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
 							</div>
 						</li>
+
 						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
 							<div class="list_inner">
 								<div class="image">
@@ -528,6 +670,8 @@
 								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
 							</div>
 						</li>
+						
+
 						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
 							<div class="list_inner">
 								<div class="image">
@@ -584,6 +728,84 @@
 								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
 							</div>
 						</li>
+
+						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<div class="list_inner">
+								<div class="image">
+									<img src="img/placeholders/1-1.jpg" alt="" />
+									<div class="main" data-img-url="./img/portfolio/VERSATIO.PNG"></div>
+								</div>
+								<!-- <div class="overlay"></div>
+								<div class="details">
+									<span>Próximamente</span>
+									<h3>Short negro (logo)</h3>
+								</div>
+								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
+							</div>
+						</li>
+
+						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<div class="list_inner">
+								<div class="image">
+									<img src="img/placeholders/1-1.jpg" alt="" />
+									<div class="main" data-img-url="./img/portfolio/MKTTOTAL.PNG"></div>
+								</div>
+								<!-- <div class="overlay"></div>
+								<div class="details">
+									<span>Próximamente</span>
+									<h3>Short negro (logo)</h3>
+								</div>
+								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
+							</div>
+						</li>
+
+						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<div class="list_inner">
+								<div class="image">
+									<img src="img/placeholders/1-1.jpg" alt="" />
+									<div class="main" data-img-url="./img/portfolio/DIAMOND.PNG"></div>
+								</div>
+								<!-- <div class="overlay"></div>
+								<div class="details">
+									<span>Próximamente</span>
+									<h3>Short negro (logo)</h3>
+								</div>
+								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
+							</div>
+						</li>
+
+
+						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<div class="list_inner">
+								<div class="image">
+									<img src="img/placeholders/1-1.jpg" alt="" />
+									<div class="main" data-img-url="./img/portfolio/INTERACTION.png"></div>
+								</div>
+								<!-- <div class="overlay"></div>
+								<div class="details">
+									<span>Próximamente</span>
+									<h3>Short negro (logo)</h3>
+								</div>
+								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
+							</div>
+						</li>
+
+
+						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+							<div class="list_inner">
+								<div class="image">
+									<img src="img/placeholders/1-1.jpg" alt="" />
+									<div class="main" data-img-url="img/portfolio/BIOMOTION.png"></div>
+								</div>
+								<!-- <div class="overlay"></div>
+								<div class="details">
+									<span>Próximamente</span>
+									<h3>Short negro (logo)</h3>
+								</div>
+								<a class="grax_tm_full_link zoom" href="img/portfolio/short.jpg"></a> -->
+							</div>
+						</li>
+
 					</ul>
 				</div>
 				<!-- <div class="grax_tm_button">
@@ -594,25 +816,13 @@
 	</div>
 	<!-- /PORTFOLIO -->
 
-	<!-- TALK -->
-	<!-- <div class="grax_tm_section">
-		<div class="grax_tm_talk">
-			<div class="container">
-				<div class="talk_inner">
-					<div class="text wow fadeInLeft" data-wow-duration="1.5s">
-						<h3><span>La tienda sigue en construcción pero estará disponible próximamente</span></h3>
-					</div>
-				</div>
-			</div>	
-		</div>
-	</div> -->
-	<!-- /TALK -->
+	
 	
 	<!-- CONTACT -->
 	<div class="grax_tm_contact" id="contact">
 		<div class="container">
 			<div class="grax_tm_title_holder">
-				<h3>Redes y <span style="color: #0583F2;">contacto</span></h3>
+				<h3>Redes y <span style="color: #4F9EDD;">contacto</span></h3>
 			</div>
 			<div class="contact_inner">
 				<div class="left wow fadeInLeft" data-wow-duration="1s">
@@ -654,7 +864,7 @@
 							<li>
 								<div class="list_inner">
 									<img class="svg" src="img/svg/social/tik-tok.svg" alt="" />
-									<p><span class="first">TikTok:</span><span class="second"><a href="#">@osmardiver05</a></span></p>
+									<p><span class="first">TikTok:</span><span class="second"><a href="https://www.tiktok.com/@osmardiver05">@osmardiver05</a></span></p>
 								</div>
 							</li>
 						</ul>
@@ -743,6 +953,31 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
+<script src="js/slider.js"></script>
+
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		effect: 'fade',
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		on: {
+			slideChange: function () {
+				var currentSlide = swiper.slides[swiper.activeIndex];
+				var slideText = currentSlide.querySelector('.slide-text p').innerText;
+				document.getElementById('bio-text').innerText = slideText;
+			}
+		}
+	});
+</script>
+
+
 <!-- /SCRIPTS -->
 
 <!--<script>
@@ -774,7 +1009,7 @@
     navLi.forEach(li => {
         li.classList.remove('active');
         if (li.querySelector('a').getAttribute('href').includes(current)) {
-            li.classList.add('active');
+            li.classLvist.add('active');
         }
     });
 });

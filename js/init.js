@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 	grax_tm_down();
 	grax_tm_hamburger();
 	grax_tm_cursor();
-	grax_tm_imgtosvg();
+	//grax_tm_imgtosvg();
 	grax_tm_popup();
 	grax_tm_data_images();
 	grax_tm_contact_form();
@@ -348,24 +348,17 @@ function grax_tm_wavefy(){
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-function grax_tm_preloader(){
-	
-	"use strict";
-	
-	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-	var preloader = $('#preloader');
-	
-	if (!isMobile) {
-		setTimeout(function() {
-			preloader.addClass('preloaded');
-		}, 800);
-		setTimeout(function() {
-			preloader.remove();
-		}, 2000);
+function grax_tm_preloader() {
+    "use strict";
 
-	} else {
-		preloader.remove();
-	}
+    var preloader = $('#preloader');
+
+    setTimeout(function() {
+        preloader.addClass('preloaded');
+    }, 800);
+    setTimeout(function() {
+        preloader.remove();
+    }, 2000);
 }
 
 // -----------------------------------------------------
@@ -481,7 +474,7 @@ function grax_tm_cursor(){
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function grax_tm_imgtosvg(){
+/*function grax_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -509,7 +502,7 @@ function grax_tm_imgtosvg(){
 		}, 'xml');
 
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------------   POPUP    ---------------------
