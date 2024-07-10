@@ -81,6 +81,36 @@
         }
 </style>
 
+<!-- <style>
+	.swiper-container {
+		position: relative;
+	}
+	
+	.swiper-button-next, .swiper-button-prev {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		background: none; /* Ya se define en el estilo en línea */
+		border: none;
+		cursor: pointer;
+	}
+	
+	.swiper-button-next {
+		right: -40px; /* Ajusta según sea necesario */
+	}
+	
+	.swiper-button-prev {
+		left: -80px; /* Ajusta según sea necesario */
+	}
+	
+	.swiper-button-next img, .swiper-button-prev img {
+		display: block;
+		width: 30px; /* Ajusta el tamaño según sea necesario */
+		height: 30px; /* Ajusta el tamaño según sea necesario */
+	}
+	</style> -->
+
 </head>
 
 
@@ -360,11 +390,11 @@
                                 </div>
                                 <!-- Add more slides with titles as needed -->
                             </div>
-                            <!-- Add Navigation -->
-                            <button class="swiper-button-next">Next</button>
-                            <button class="swiper-button-prev">Prev</button>
-                        </div>
-                    </div>
+							<!-- Add Navigation -->
+							<button class="swiper-button-next" style="background-color: rgba(0, 0, 0, 0); padding: 20px; color: white;"><img src="img/svg/nextW.svg" height="50px" width="auto"></button>
+							<button class="swiper-button-prev" style="background-color: rgba(0, 0, 0, 0); padding: 20px; color: white;"><img src="img/svg/prevW.svg" height="50px" width="auto"></button>
+						</div>
+					</div>
                     <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
                         <div class="grax_tm_title_holder">
                             <h3 id="slide-title">Bio</h3>
