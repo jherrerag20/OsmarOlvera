@@ -79,6 +79,25 @@
             height: 100%;
             object-fit: cover; /* Asegura que el video cubra todo el área del contenedor */
         }
+
+		/* GRAVITY */
+		.falling {
+              position: absolute;
+              animation: fall 2s ease-in forwards;
+            }
+
+            @keyframes fall {
+              0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(100vh) rotate(15deg);
+                opacity: 0;
+              }
+            }
+
+
 </style>
 
 <!-- <style>
@@ -921,9 +940,6 @@
 							<div class="grax_tm_button">
 								<a id="send_message" href="#">Enviar Mensaje</a>
 							</div>
-
-							<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
-
 						</form>
 					</div>
 				</div>
@@ -1046,6 +1062,21 @@
 
 
 </script>-->
-
+<!-- GRAVITY -->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  setTimeout(() => {
+		// Seleccionar todos los elementos de texto y el fondo
+		const elements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a, span, li, .single-slider, .slider-shape");
+	
+		// Aplicar la clase 'falling' a todos los elementos de texto y el fondo
+		elements.forEach(el => {
+		  el.classList.add("falling");
+		});
+	  }, 6000); // 5000 milisegundos = 5 segundos
+	});
+</script>   
+  
+  
 </body>
 </html>
