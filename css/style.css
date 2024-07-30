@@ -2524,3 +2524,21 @@ body.dark .grax_tm_settings .cursor li .svg,
 .logo a.light:hover {
     display: none;
 }
+
+.grax_tm_about {
+    position: relative;
+    z-index: 1;
+}
+
+.superposed-image {
+    position: absolute;
+    top: -150px; /* Ajusta este valor según sea necesario para mover la imagen hacia abajo */
+    left: 20%;  /* Mueve la imagen hacia la izquierda */
+    transform: translateX(-20%);
+    z-index: 2;
+}
+
+.superposed-image img {
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
