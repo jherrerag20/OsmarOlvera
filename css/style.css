@@ -288,10 +288,10 @@ h6 { font-size: 16px; }
 	font-weight: 500;
 	transition: all .3s ease;
 }
-.grax_tm_topbar .menu ul li.current a{color: #4F9EDD;}
-.grax_tm_topbar .menu ul li a:hover{color: #4F9EDD;}
+.grax_tm_topbar .menu ul li.current a{color: #AB954C;}
+.grax_tm_topbar .menu ul li a:hover{color: #AB954C;}
 .grax_tm_topbar.animate .menu ul li a{color: white;}
-.grax_tm_topbar.animate .menu ul li a:hover{color: #4F9EDD;}
+.grax_tm_topbar.animate .menu ul li a:hover{color: #AB954C;}
 
 /*---------------------------------------------------*/
 /*	03) GRAX MOBILE MENU
@@ -454,7 +454,7 @@ h6 { font-size: 16px; }
 
 .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a:hover{
 	text-decoration: none;
-	color: #4F9EDD;
+	color: #AB954C;
 	display: inline-block;
 	padding: 4px 0px;
 	font-family: "Poppins";
@@ -754,8 +754,8 @@ h6 { font-size: 16px; }
 	text-decoration: none;
     color: #fff;
     display: inline-block;
-    background-color: #4F9EDD;
-	border: 2px solid #4F9EDD;
+    background-color: #AB954C;
+	border: 2px solid #AB954C;
     padding: 10px 40px;
     border-radius: 5px;
 	
@@ -1916,7 +1916,7 @@ body.modal{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/slider/HOME_5@0.3x\ \(1\).png);
+	background-image: url(..//img/slider/HOME_6.png);
 }
 .grax_tm_hero .ripple:before{
 	position: absolute;
@@ -2499,4 +2499,16 @@ body.dark .grax_tm_settings .cursor li .svg,
 	.grax_tm_portfolio ul li{width: 100%;padding-left: 0px;}
 	.grax_tm_news .news_list ul{margin: 0px;}
 	.grax_tm_news .news_list ul li{width: 100%;padding-left: 0px;}
+}
+
+.copy p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.versatio-logo {
+    margin-left: 5px; /* Ajusta el espaciado entre el texto y el logo según sea necesario */
+    vertical-align: middle;
 }

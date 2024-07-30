@@ -80,24 +80,6 @@
             object-fit: cover; /* Asegura que el video cubra todo el área del contenedor */
         }
 
-		/* GRAVITY */
-		.falling {
-              position: absolute;
-              animation: fall 2s ease-in forwards;
-            }
-
-            @keyframes fall {
-              0% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-              }
-              100% {
-                transform: translateY(100vh) rotate(15deg);
-                opacity: 0;
-              }
-            }
-
-
 </style>
 
 <!-- <style>
@@ -630,7 +612,7 @@
 		<div class="grax_tm_portfolio2">
 			<div class="container">
 				<div class="grax_tm_title_holder">
-					<h3 style="color: white;">Mis aliados en <span style="color: #4F9EDD;">cada clavado</span></h3>
+					<h3 style="color: white;">Mis aliados en <span style="color: #AB954C;">cada clavado</span></h3>
 				</div>
 				<div class="portfolio_list">
 					<ul class="gallery_zoom my_waypoint">
@@ -871,7 +853,7 @@
 	<div class="grax_tm_contact" id="contact">
 		<div class="container">
 			<div class="grax_tm_title_holder">
-				<h3>Redes y <span style="color: #4F9EDD;">contacto</span></h3>
+				<h3>Redes y <span style="color: #AB954C;">contacto</span></h3>
 			</div>
 			<div class="contact_inner">
 				<div class="left wow fadeInLeft" data-wow-duration="1s">
@@ -972,6 +954,7 @@
 					</div> -->
 					<div class="copy wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
 						<p>&copy; Copyright 2024. Osmar Olvera Ibarra. All rights reserved.</p>
+						<p><span class="powered-by">Proudly Powered by <img src="img/partners/versatio.png" width="100px" class="versatio-logo"></span></p>
 					</div>
 				</div>
 			</div>
@@ -1026,7 +1009,7 @@
 
 <!-- /SCRIPTS -->
 
-<!--<script>
+<script>
 	
 	window.addEventListener('scroll', function() {
     const menu = document.querySelector('.menu');
@@ -1061,22 +1044,6 @@
 });
 
 
-</script>-->
-<!-- GRAVITY -->
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-	  setTimeout(() => {
-		// Seleccionar todos los elementos de texto y el fondo
-		const elements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a, span, li, .single-slider, .slider-shape");
-	
-		// Aplicar la clase 'falling' a todos los elementos de texto y el fondo
-		elements.forEach(el => {
-		  el.classList.add("falling");
-		});
-	  }, 6000); // 5000 milisegundos = 5 segundos
-	});
-</script>   
-  
-  
+</script>
 </body>
 </html>
