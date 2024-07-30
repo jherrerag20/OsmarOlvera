@@ -2532,13 +2532,41 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 .superposed-image {
     position: absolute;
-    top: -150px; /* Ajusta este valor según sea necesario para mover la imagen hacia abajo */
-    left: 20%;  /* Mueve la imagen hacia la izquierda */
-    transform: translateX(-20%);
+    top: -280px; /* Ajusta este valor según sea necesario para mover la imagen hacia abajo */
+    left: 30%;  /* Mueve la imagen hacia la izquierda */
+    transform: translateX(-5%);
     z-index: 2;
 }
 
 .superposed-image img {
     width: 350px; /* Ajusta el tamaño de la imagen */
     height: auto;
+}
+
+/* Ocultar el logo oscuro por defecto */
+.logo .dark {
+    display: none;
+}
+
+/* Mostrar el logo oscuro al hacer hover */
+.logo:hover .light {
+    display: none;
+}
+
+.logo:hover .dark {
+    display: inline;
+}
+
+/* Añadir transición de opacidad para suavizar el cambio */
+.logo img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Cambiar la opacidad al hacer hover */
+.logo:hover .light img {
+    opacity: 0;
+}
+
+.logo:hover .dark img {
+    opacity: 1;
 }
