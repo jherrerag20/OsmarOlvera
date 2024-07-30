@@ -1916,7 +1916,7 @@ body.modal{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/slider/HOME_6.png);
+	background-image: url(..//img/slider/HOME_7.png);
 }
 .grax_tm_hero .ripple:before{
 	position: absolute;
@@ -2511,4 +2511,16 @@ body.dark .grax_tm_settings .cursor li .svg,
 .versatio-logo {
     margin-left: 5px; /* Ajusta el espaciado entre el texto y el logo según sea necesario */
     vertical-align: middle;
+}
+
+.logo a.dark {
+    display: none;
+}
+
+.logo a.light:hover ~ a.dark {
+    display: block;
+}
+
+.logo a.light:hover {
+    display: none;
 }
