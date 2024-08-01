@@ -662,7 +662,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #fff;
+	background-color: #f9f9f9;
 	margin-bottom: 150px;
 	padding-top: 150px;
 }
@@ -1892,7 +1892,7 @@ body.modal{
  	height: 100%;
 	top: 0;
  	left: 0;
-	/* background-image: url("..//img/slider); */
+	background-image: url(..//img/slider/HOME_7.png);
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-position: center;
@@ -2643,7 +2643,7 @@ body.dark .grax_tm_settings .cursor li .svg,
     max-width: 600px; /* Ajustar este valor para que el texto sea más estrecho */
     text-align: left; /* Alinear el texto a la izquierda */
     margin: 0; /* Eliminar margen adicional */
-    padding: 0; /* Eliminar padding adicional */
+    padding: 60px; /* Eliminar padding adicional */
 }
 
 .slide-text h3 {
