@@ -37,7 +37,7 @@ body{
 	letter-spacing: 1px;
 	word-wrap: break-word;
 	font-weight: 400;
-	background-color: #fff;
+	background-color: #f9f9f9;
 	color: #767676;
 }
 svg{
@@ -663,7 +663,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	margin-bottom: 150px;
+	margin-bottom: 0px;
 	padding-top: 150px;
 }
 .grax_tm_about .about_inner{
@@ -1836,6 +1836,7 @@ body.modal{
 	top: 0;
 	left: 0px;
 	width: 100%;
+	background: #f9f9f9;
 }
 
 .my_wave svg{
@@ -1843,7 +1844,7 @@ body.modal{
 	vertical-align: middle;
   	height: 180px;
 	width: 100%;
-	fill: #07AFEC;
+	fill: #f9f9f9;
 }
 
 .grax_tm_copyright {
@@ -2670,9 +2671,8 @@ body.dark .grax_tm_settings .cursor li .svg,
     }
 
     .image {
-        max-width: 250px; /* Ajustar el ancho máximo de la imagen en pantallas medianas */
-        margin-left: 20px; /* Mover la imagen más a la derecha */
-        margin-bottom: 20px; /* Añadir margen inferior */
+        max-width: 80%; /* Ajustar el ancho de la imagen para pantallas medianas */
+        margin-bottom: 20px;
     }
 
     .slide-text {
@@ -2697,9 +2697,8 @@ body.dark .grax_tm_settings .cursor li .svg,
     }
 
     .image {
-        max-width: 200px; /* Ajustar el ancho máximo de la imagen en pantallas pequeñas */
-        margin-left: 90px; /* Mover la imagen más a la derecha */
-        margin-bottom: 20px; /* Añadir margen inferior */
+        max-width: 90%; /* Ajustar el ancho de la imagen para pantallas pequeñas */
+        margin-bottom: 20px;
     }
 
     .slide-text {
