@@ -692,7 +692,7 @@ h6 { font-size: 16px; }
 	background-position: center;
 	background-size: cover;
 	border-radius: 5px;
-	box-shadow: 0px 0px 40px rgb(0 0 0 / 20%);
+	box-shadow: 0px 0px 40px rgb(0 0 0 / 20%);;
 }
 .grax_tm_about .right{
 	width: 60%;
@@ -2529,6 +2529,8 @@ body.dark .grax_tm_settings .cursor li .svg,
 .grax_tm_about {
     position: relative;
     z-index: 1;
+	padding-top: 50;
+	padding-bottom: 0;
 }
 
 .superposed-image {
@@ -2564,6 +2566,13 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 	#boutme {
 		margin-top: -250px;
+		margin-bottom: 0px;
+	}
+	.grax_tm_about {
+		position: relative;
+		z-index: 1;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -2662,6 +2671,7 @@ body.dark .grax_tm_settings .cursor li .svg,
         flex-direction: column; /* Apilar elementos verticalmente en pantallas medianas */
         align-items: center; /* Centrar los elementos */
         margin: 10px 0; /* Reducir el margen */
+		padding-bottom: 0px;
     }
 
     .about_inner {
@@ -2722,6 +2732,7 @@ body.dark .grax_tm_settings .cursor li .svg,
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
+	padding-bottom: 0;
 }
 
 #about2 .container {
@@ -2757,7 +2768,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 #about2 .container::before {
     content: '';
     position: absolute;
-    top: 80%; /* Ajusta este valor según sea necesario para que pase justo debajo de la imagen */
+    top: 77%; /* Ajusta este valor según sea necesario para que pase justo debajo de la imagen */
     left: 0;
     width: 840%;
     height: 1px; /* Grosor de la línea */
@@ -2773,8 +2784,34 @@ body.dark .grax_tm_settings .cursor li .svg,
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     #about2 .container::before {
-        top: 45%; /* Ajusta este valor para la versión móvil */
-		width: 1000%;
+        top: 100%; /* Ajusta este valor para la versión móvil */
+		width: 10%;
         /* Otros ajustes específicos para móviles, si son necesarios */
     }
+}
+
+.image.parallax {
+    position: relative;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 500px; /* Ajusta el tamaño máximo si es necesario */
+    margin: 0 auto; /* Centrar en caso de ser necesario */
+	margin-bottom: 20px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de aspecto */
+    display: block;
+    object-fit: cover; /* Ajusta cómo se recorta la imagen dentro del contenedor */
+}
+
+.osmarFooter{
+
+	width: 500px;
+	height: auto;
+	display: flex; /* Agrega flexbox para controlar la alineación */
+	align-items: center; /* Centra la imagen verticalmente */
+	justify-content: center; /* Centra la imagen horizontalmente si es necesario */
+	margin-top: -90px;
+	border-radius: 5px;
 }
