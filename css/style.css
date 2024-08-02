@@ -2764,6 +2764,12 @@ body.dark .grax_tm_settings .cursor li .svg,
     text-align: center; /* Centra el título horizontalmente */
 }
 
+.mobile-img {
+    display: none;
+    width: 100%; /* imagen ocupando todo el ancho */
+    height: auto; /*Proporción original de la imagen */
+    object-fit: cover; /* Ajusta el recorte de la imagen para llenar el contenedor */
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
