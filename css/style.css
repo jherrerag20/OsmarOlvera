@@ -1574,17 +1574,6 @@ body.modal{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------------------*/
 /*	09) GRAX CONTACT
 /*---------------------------------------------------*/
@@ -2571,7 +2560,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	.grax_tm_about {
 		position: relative;
 		z-index: 1;
-		padding-top: 0;
+		padding-top: 270px;
 		padding-bottom: 0;
 	}
 }
@@ -2690,6 +2679,21 @@ body.dark .grax_tm_settings .cursor li .svg,
         text-align: center; /* Centrar el texto */
         padding: 0 10px; /* Añadir padding lateral */
     }
+
+	.grax_tm_section #boutme {
+		padding: 0 20px; /* Añade un padding a los lados izquierdo y derecho */
+	}
+	
+	.right {
+		margin-right: auto; /* Asegura que el contenedor derecho no esté alineado a la derecha */
+		margin-left: auto; /* Centra el contenedor */
+		max-width: 90%; /* Limita el ancho máximo para mejorar la legibilidad en móviles */
+	}
+	
+	.grax_tm_title_holder {
+		text-align: center; /* Centra el título horizontalmente */
+	}
+	
 }
 
 @media (max-width: 768px) {
@@ -2746,9 +2750,20 @@ body.dark .grax_tm_settings .cursor li .svg,
     display: block;
 }
 
-.mobile-img {
-    display: none;
+.grax_tm_section #boutme {
+    padding: 0 20px; /* Añade un padding a los lados izquierdo y derecho */
 }
+
+.right {
+    margin-right: auto; /* Asegura que el contenedor derecho no esté alineado a la derecha */
+    margin-left: auto; /* Centra el contenedor */
+    max-width: 90%; /* Limita el ancho máximo para mejorar la legibilidad en móviles */
+}
+
+.grax_tm_title_holder {
+    text-align: center; /* Centra el título horizontalmente */
+}
+
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -2814,4 +2829,24 @@ body.dark .grax_tm_settings .cursor li .svg,
 	justify-content: center; /* Centra la imagen horizontalmente si es necesario */
 	margin-top: -90px;
 	border-radius: 5px;
+}
+
+@media (max-width: 768px) { /* Ajusta el valor a tus necesidades */
+    .grax_tm_section {
+        margin-bottom: 0; /* Elimina el margen inferior */
+    }
+    
+    #boutme {
+        margin-bottom: 0; /* Asegúrate de que no haya margen inferior en esta sección */
+        padding-bottom: 0; /* Elimina cualquier padding inferior si existe */
+    }
+	#about2 .grax_tm_about{
+		width: 100%;
+		height: auto;
+		clear: both;
+		float: left;
+		background-color: #f9f9f9;
+		margin-bottom: 0px;
+		padding-top: 0px;
+	}
 }
