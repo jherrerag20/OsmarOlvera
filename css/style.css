@@ -2749,3 +2749,32 @@ body.dark .grax_tm_settings .cursor li .svg,
         display: block;
     }
 }
+
+#about2 .container {
+    position: relative; /* Necesario para que el ::before se posicione respecto al contenedor */
+}
+
+#about2 .container::before {
+    content: '';
+    position: absolute;
+    top: 80%; /* Ajusta este valor según sea necesario para que pase justo debajo de la imagen */
+    left: 0;
+    width: 840%;
+    height: 1px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+    z-index: 0; /* Mantener la línea detrás de los contenidos */
+}
+
+#Champ-desktop, #Champ-mobile {
+    position: relative;
+    z-index: 1; /* Asegura que la imagen esté sobre la línea */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    #about2 .container::before {
+        top: 45%; /* Ajusta este valor para la versión móvil */
+		width: 1000%;
+        /* Otros ajustes específicos para móviles, si son necesarios */
+    }
+}
