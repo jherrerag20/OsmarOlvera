@@ -2629,7 +2629,7 @@ body.dark .grax_tm_settings .cursor li .svg,
     flex: 1;
     text-align: center;
     overflow: hidden;
-    max-width: 300px; /* Máximo ancho para la imagen */
+    max-width: 420px; /* Máximo ancho para la imagen */
     margin-right: 20px; /* Ajustar el margen derecho */
 }
 
@@ -2728,4 +2728,24 @@ body.dark .grax_tm_settings .cursor li .svg,
     max-width: none;
     padding-left: 0;
     padding-right: 0;
+}
+
+/* Estilo por defecto, oculta la imagen para móviles en pantallas grandes */
+.desktop-img {
+    display: block;
+}
+
+.mobile-img {
+    display: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
 }
