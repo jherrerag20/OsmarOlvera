@@ -663,8 +663,11 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	padding-top: 150px;
+}
+#about {
+	padding-bottom: 60px;
 }
 .grax_tm_about .about_inner{
 	width: 100%;
@@ -855,7 +858,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 }
-.grax_tm_title_holder span{color: #e54b4b;	}
+.grax_tm_title_holder span{color: #AB954C;	}
 .grax_tm_title_holder h3{
 	text-transform: uppercase;
 	font-weight: 700;
@@ -1285,7 +1288,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: white;
+	background-color: #f9f9f9;
 	padding: 140px 0px 90px 0px;
 }
 .grax_tm_news .news_list{
@@ -1354,6 +1357,7 @@ h6 { font-size: 16px; }
 	font-size: 18px;
 	font-weight: 600;
 	display: inline-block;
+	margin-top: 1px;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -1361,7 +1365,7 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.grax_tm_news .news_list ul li .details .title a:hover{color: #e54b4b;}
+.grax_tm_news .news_list ul li .details .title a:hover{color: #AB954C;}
 .grax_tm_news .news_list ul li .details .date{
 	text-transform: uppercase;
 	font-family: "Poppins";
@@ -1379,7 +1383,7 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.grax_tm_news .news_list ul li .details .date a:hover{color: #e54b4b;}
+.grax_tm_news .news_list ul li .details .date a:hover{color: #AB954C;}
 .grax_tm_news .news_list ul li .details .date span{
 	position: relative;
 	margin-left: 11px;
@@ -1446,19 +1450,19 @@ body.modal{
 	margin-top: 0px;
 }
 .grax_tm_modalbox_news .close{
-	position: fixed;
-	left: 100%;
-	top: 0px;
-	margin-left: 40px;
-	z-index: 111111;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 111111;
 }
 .grax_tm_modalbox_news .close a{
 	text-decoration: none;
 	color: #fff;
 }
 .grax_tm_modalbox_news .close .svg{
-	width: 50px;
-	height: 50px;
+	color: #777;
+    width: 25px;
+    height: 25px;
 }
 .grax_tm_modalbox_news .description_wrap{
 	position: relative;
@@ -1483,7 +1487,7 @@ body.modal{
 .grax_tm_modalbox_news .description blockquote{
 	font-style: italic;
 	color: #000;
-	border-left: 2px solid #e54b4b;
+	border-left: 2px solid #AB954C;
 	padding-left: 20px;
 	margin-bottom: 15px;
 }
@@ -1493,18 +1497,20 @@ body.modal{
 	z-index: -1;
 	margin-bottom: 40px;
 }
+
 .grax_tm_modalbox_news .description_wrap .image img{
+	display: none;
 	min-width: 100%;
 }
+
+#ola .grax_tm_modalbox_news .description_wrap .image img{
+	min-width: 100%;
+}
+
 .grax_tm_modalbox_news .description_wrap .image .main{
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	align-items: center;
+	width: 1000px;
 	border-radius: 5px;
 }
 .grax_tm_modalbox_news .details .title{
@@ -1625,6 +1631,7 @@ body.modal{
 	float: left;
 	position: relative;
 	padding-left: 27px;
+	margin-bottom: 10px;
 }
 .grax_tm_contact .info_list ul li span.first{
 	min-width: 100px;
@@ -2637,6 +2644,7 @@ body.dark .grax_tm_settings .cursor li .svg,
     object-fit: cover;
 }
 
+
 .slide-text {
     flex: 2;
     max-width: 600px; /* Ajustar este valor para que el texto sea más estrecho */
@@ -2792,9 +2800,9 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 .main-img {
     width: 100%;
-    height: auto; /* Mantener la proporción de aspecto */
+    height: auto;
     display: block;
-    object-fit: cover; /* Ajusta cómo se recorta la imagen dentro del contenedor */
+    object-fit: cover;
 }
 
 .osmarFooter{
@@ -2826,4 +2834,32 @@ body.dark .grax_tm_settings .cursor li .svg,
 		margin-bottom: 0px;
 		padding-top: 0px;
 	}
+}
+
+/* Contenedor de la imagen */
+.image-container {
+	width: 100%; /* Ocupa todo el ancho del contenedor */
+	margin-bottom: 2px; /* Añade un margen inferior para separación */
+	overflow: hidden; /* Asegura que no haya desbordamiento */
+	border-radius: 8px; /* Opcional: añade esquinas redondeadas */
+}
+
+/* Imagen formateada */
+.formatted-image {
+	width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+	height: auto; /* Mantiene la proporción de la imagen */
+	display: block; /* Asegura que no haya espacios extra alrededor de la imagen */
+	object-fit: cover; /* Escala la imagen para cubrir el contenedor */
+	border-radius: 8px; /* Opcional: añade esquinas redondeadas */
+	margin-bottom: 15px;
+}
+
+/* Ocultar la imagen en el preview */
+.preview #ola2 {
+    display: none;
+}
+
+/* Mostrar la imagen en la vista completa de la noticia */
+.full-article #ola2 {
+    display: block;
 }
