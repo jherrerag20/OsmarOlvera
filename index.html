@@ -560,8 +560,9 @@
 									<div class="share">
 										<span>Share:</span>
 										<ul class="social">
-											<li><a id="share-facebook" href="#" onclick="share('facebook', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/#news')"><img class="svg" src="img/svg/social/facebook.svg" alt=""></a></li>
-											<li><a id="share-twitter" href="#" onclick="share('twitter', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/#news')"><img class="svg" src="img/svg/social/twitter.svg" alt=""></a></li>
+											<li><a id="share-facebook" href="#" onclick="share('facebook', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/#news')"><img class="svg" src="img/svg/social/facebook.png" alt=""></a></li>
+											<li><a id="share-twitter" href="#" onclick="share('twitter', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/#news')"><img class="svg" src="img/svg/social/twitter.png" alt=""></a></li>
+											<li><a id="share-whatsapp" href="#" onclick="share('whatsapp', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://www.osmarolvera.com/#news')"><img class="svg" src="img/svg/social/whatsapp.png" alt=""></a></li>
 										</ul>
 									</div>									
 								</div>
@@ -1154,24 +1155,21 @@
 
 <script>
 	function share(platform, title, url) {
-		const encodedTitle = encodeURIComponent(title);
-		const encodedUrl = encodeURIComponent(url);
-		let shareUrl = '';
-	
-		switch(platform) {
-			case 'facebook':
-				shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedTitle}`;
-				break;
-			case 'twitter':
-				shareUrl = `https://x.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
-				return;
-			default:
-				return;
-		}
-	
-		window.open(shareUrl, '_blank');
-	}
-	</script>
+    let shareUrl = '';
+    
+    if (platform === 'facebook') {
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&t=${encodeURIComponent(title)}`;
+    } else if (platform === 'twitter') {
+        shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+    } else if (platform === 'whatsapp') {
+        shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(title + ' ' + url)}`;
+    }
+    
+    window.open(shareUrl, '_blank');
+}
+
+
+</script>
 	
 <script>
 	// Selecciona todos los elementos que abren el pop-up
