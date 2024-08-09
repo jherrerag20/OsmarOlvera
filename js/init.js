@@ -96,37 +96,37 @@ function grax_tm_popupscroll(){
 	
 	"use strict";
 	
-	var WW				= jQuery(window).width();
-	var H				= jQuery(window).height();
-	var scrollable		= jQuery('.scrollable');
+	var WW = jQuery(window).width();
+	var H = jQuery(window).height();
+	var scrollable = jQuery('.scrollable');
 	
-	var popupBox		= jQuery('.grax_tm_modalbox_news .description_wrap');
+	var popupBox = jQuery('.grax_tm_modalbox_news .description_wrap');
 	
+	// Ajusta la altura del popup según el ancho de la ventana
 	if(WW >= 1200){
 		popupBox.css({height:H-140});
-	}else{
-		popupBox.css({height:H});
+	} else {
+		popupBox.css({height:H-70}); // Reduce el margen superior e inferior en dispositivos móviles
 	}
 	
-	scrollable.each(function(){
-		var element		= jQuery(this);
-		var wH			= jQuery(window).height();
-		
-		element.css({height: wH-140});
-		
-		if(WW >= 1200){
+	// Desactiva niceScroll en dispositivos móviles
+	if(WW >= 1200){
+		scrollable.each(function(){
+			var element = jQuery(this);
+			var wH = jQuery(window).height();
+			
 			element.css({height: wH-140});
-		}else{
-			element.css({height: wH});
-		}
-		
-		element.niceScroll({
-			touchbehavior:false,
-			cursorwidth:0,
-			autohidemode:true,
-			cursorborder:"0px solid #fff"
+			
+			element.niceScroll({
+				touchbehavior:false,
+				cursorwidth:0,
+				autohidemode:true,
+				cursorborder:"0px solid #fff"
+			});
 		});
-	});
+	} else {
+		scrollable.css('overflow-y', 'scroll'); // Activar el scroll nativo para móviles
+	}
 }
 
 // -------------------------------------------------

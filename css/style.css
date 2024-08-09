@@ -2863,3 +2863,10 @@ body.dark .grax_tm_settings .cursor li .svg,
 .full-article #ola2 {
     display: block;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 768px) {
+    .grax_tm_modalbox_news .description_wrap {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; /* Esto mejora el desplazamiento en iOS */
+    }
+}
