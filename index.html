@@ -559,10 +559,10 @@
 									<div class="share">
 										<span>Share:</span>
 										<ul class="social">
-											<li><a id="share-facebook" href="#" onclick="share('facebook', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/noticias/Medallista-Olímpico-París-2024')"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a></li>
-											<li><a id="share-twitter" href="#" onclick="share('twitter', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', 'https://osmarolvera.com/noticias/Medallista-Olímpico-París-2024')"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a></li>
+											<li><a id="share-facebook" href="#" onclick="share('facebook', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', window.location.href)"><img class="svg" src="img/svg/social/facebook.svg" alt=""></a></li>
+											<li><a id="share-twitter" href="#" onclick="share('twitter', 'OSMAR OLVERA MULTIMEDALLISTA EN PARÍS 2024', window.location.href)"><img class="svg" src="img/svg/social/twitter.svg" alt=""></a></li>
 										</ul>
-									</div>
+									</div>									
 								</div>
 							</div>
 						</li>
@@ -1172,6 +1172,30 @@
 	}
 	</script>
 	
+<script>
+	// Selecciona todos los elementos que abren el pop-up
+const popUpLinks = document.querySelectorAll('.grax_tm_full_link');
+
+// Itera sobre cada enlace y agrega un evento para abrir el pop-up con la URL correcta
+popUpLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Suponiendo que la URL de la noticia se almacena en un atributo data-url
+        const newsUrl = link.getAttribute('data-url');
+        
+        // Selecciona el enlace dentro del pop-up que necesitas actualizar
+        const popUpLink = document.querySelector('.grax_tm_modalbox_news .close a');
+        
+        // Actualiza el atributo href con la URL de la noticia
+        popUpLink.setAttribute('href', newsUrl);
+
+        // Aquí puedes abrir el pop-up si no se abre automáticamente
+        document.querySelector('.grax_tm_modalbox_news').classList.add('active');
+    });
+});
+
+</script>
 
 <script>
 	window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };

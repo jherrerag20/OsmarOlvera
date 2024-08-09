@@ -1534,7 +1534,7 @@ body.modal{
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-.grax_tm_modalbox_news .date a:hover{color: #e54b4b;}
+.grax_tm_modalbox_news .date a:hover{color: #AB954C;}
 .grax_tm_modalbox_news .date span{
 	position: relative;
     margin-left: 11px;
